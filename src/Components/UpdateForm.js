@@ -13,6 +13,7 @@ const UpdateForm = () => {
     const onChange = (event) => {
         setFormData({...formData, [event.target.name]: event.target.value})
     }
+    // put method update portion of CRUD
     const updateData = async () => {
         const res =  await fetch(`https://jsonplaceholder.typicode.com/comments/${formData.id}`, {
             method: 'PUT',

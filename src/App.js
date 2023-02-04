@@ -90,7 +90,7 @@ function App() {
       {/* {console.log(photos)} */}
       <EpisodeForm />
       <UpdateForm />
-      {/* get request on line 96 */}
+      {/* get request on line 96  Retrieve portion of CRUD*/}
       <h3>Click on any lorem ipsum Text to delete</h3>
       <div className='get'>
         {photos.map(photo => <p key={photo.id} onClick={() => deletePhoto(photo.id)}>{photo.title}</p>)}
